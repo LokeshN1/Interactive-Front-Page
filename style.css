@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+                                /*:---- navbar ----: */
+
+.nav{
+    width: 100%;
+    height: 11vh;
+    padding: 5px 70px ;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 7;
+    
+}
+nav:hover{
+    background-color: pink;
+}
+.nav #logo{
+    width: 200px;
+    height: 180px;;
+}
+
+.nav h4{
+    font-size: 23px;
+    font-family: 'Victor Mono', monospace;
+    text-transform: uppercase;
+}
+
+/* Background Video */
+
+#video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#cursor{
+    width: 20px;
+    height: 20px;
+    background: rgb(255, 106, 0);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+}
+
+#cursor_blur{
+    width: 300px;
+    height: 300px;
+    background: rgb(255, 221, 0);
+    border-radius: 50%;
+    position: fixed;
+    z-index:3;
+    filter: blur(200px);
+}
+
+                            /* Website Content */
+
+.main{
+    position: relative;
+
+}
+
+                                /*:---- PAGE 1 ----: */
+
+#page1 {
+width: 100%;
+height: 100vh;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+z-index: 5;
+
+}
+
+#page1 h2{
+    font-size: 75px;
+    font-family: 'Philosopher', sans-serif;
+    position: relative;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    text-align: center;
+
+}
+
+#page1 h2::before{
+    content: "EAT. SLEEP. CODE";
+    position: absolute;
+    font-size: 75px;
+    font-family: 'Philosopher', sans-serif;
+    color: rgb(0, 0, 0);
+    left: -4px;
+    top: -3px;
+    z-index: -1;
+    -webkit-text-stroke: 3px rgb(0, 128, 77);
+}
+
+#p1_h41{
+    
+    font-size: 40px;
+    font-family: 'Space Grotesk';
+    margin-bottom: 10px;
+    color: red;
+}
+
+#p1_h42{
+    font-size: 50px;
+    font-family: 'Edu SA Beginner', cursive;
+    margin-bottom: 10px;
+    color: aquamarine;
+}
+
+                                /*:---- PAGE 2 ----: */
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    /* background: #000; */
+}
+
+#scroller{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-size: 100px;
+    /* position: relative; */
+    z-index: 55;
+
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+
+#scroller_in{
+    display: inline-block;
+    white-space: nowrap;
+    animation: ani1 infinite 10s linear;
+    z-index: 56;
+}
+
+#scroller_in h2{
+    display: inline-block;
+    font-family: 'Ysabeau SC', sans-serif;
+    color: white;
+    transition: all linear 0.5s;
+    -webkit-text-stroke: 1px red;
+    z-index: 57;
+    margin: 10px;
+
+}
+#scroller_in :hover{
+    color: red;
+}
+@keyframes ani1 {
+    from{
+        transform:translateX(0%) ;
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+
+#img2{
+    width: 200px;
+    height: 207px;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20vh;
+    
+}
+
+#about_us{
+    width: 50%;
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Edu SA Beginner', cursive;
+    
+}
+
+                                /*:---- PAGE 3 ----: */
+
+#page3{
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: visible;
+}
+#card1, #card2, #card3{
+    position: relative;
+    width: 23%;
+    height: 72vh;
+    background: white;
+    border-radius: 5%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* opacity: 0; */
+
+
+}
+
+
+#crd_cntent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* margin: 0 2%; */
+    /* display: block; */
+    text-align: center;
+    /* background: red; */
+    border-radius: 5%;
+    /* opacity: 0; */
+    /* z-index: -1; */
+    
+    
+}
+
+
+#crd_cntent h4{   
+font-family: 'Itim', cursive;
+font-size: 25px;
+
+}
+
+#crd_cntent h3{   
+    font-family: 'Kanit', sans-serif;
+    margin: 30px 0;
+    font-size: 35px;
+
+    }
+
+ 
+
+#card1{
+    background-image: url(https://wallpaperaccess.com/full/4357280.jpg);
+
+}
+
+#card2{
+    background-image: url(https://wallpapercave.com/wp/wp6245385.jpg);
+}
+
+#card3{
+    background-image: url(https://w0.peakpx.com/wallpaper/469/148/HD-wallpaper-fullstack-development-nodejs-programmer-technology.jpg);
+}
+
+                                /*:---- PAGE 4 ----: */
+
+#page4{
+    width: 100%;
+    height: 60vh;
+}
+
+#page4 #poster{
+    margin-top: 10%;
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(45deg, rgb(0, 108, 216), transparent , rgb(148, 0, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 'Lugrasimo', cursive;
+}
+ 
+                                /*:---- PAGE 5 ----: */
+
+#page5 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page5 #quote {
+    width: 50%;
+    
+}
+
+#page5 h3{
+    width: 90%;
+    font-size: 50px;
+    font-family: 'Special Elite', cursive;
+    line-height: 60px;
+    text-align: center;
+    line-height: 10vh;
+
+}
+#page5 img{
+    width: 70px;
+    height: 70px;
+}
+
+#left_img{
+    transform: translate3d(-90px, -95px, 0);
+}
+
+#right_img{
+    position: relative;
+    left: 100%;
+    align-items: flex-end;
+    transform: translate3d(40px, 75px, 0);
+}
+
+                                /*:---- PAGE 6 ----: */
+
+#page6{
+    width: 100%;
+    height: 80vh;
+}
+
+#container{
+    position: relative;
+    margin: 10% 0 ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 100px;
+}
+
+#c{
+    width: 24%;
+    height:21vh;
+    background: linear-gradient(0deg, #ff000000, red);
+    border-radius: 5%;
+    /* gap: 20px; */
+    z-index: 2;
+}
+
+#c h3{
+    padding: 10%;
+    font-size: 50px;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    color:black;
+    /* top: 50%; */
+}
+
+#on_behind{
+    position: absolute;
+    top: -20%;
+    z-index: -0.4;
+
+}
+
+#on_behind h2{
+    font-size: 102px;
+    -webkit-text-stroke: 2px solid rgb(255, 255, 255);
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 2px red;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+                            /* <---- ENDING -----> */
+                            
+#end{
+    position: relative;
+    width: 100%;
+    min-height:50%;
+    background: linear-gradient(45deg, rgb(0, 84, 152), transparent,rgb(0, 84, 152));
+}
+
+#end_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+#end_1 #logo_end{
+    width: 230px;
+    height: 230px;
+}
+
+#end_1 h4{
+    font-size: 33px;
+    line-height: 6vh;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-transform:uppercase;
+
+}
+
+#end_1 h6{
+    font-size: 20px;
+    line-height: 3vh;
+    font-weight: lighter;
+    font-family: 'Alegreya Sans SC', sans-serif;
+
+}
+
+#end_copyrights{
+    position: absolute;
+    bottom: 10px;
+    top: 30px;
+    left: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 230px;
+    color: black;
+
+}
+
+#end_copyrights h5, h4{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Armata', sans-serif;
+}
+#end_copyrights h4{
+    font-weight: bold;
+    color: red;
+}
+
+#social_media img{
+    position: absolute;
+    top: 53%;
+    width: 40%;
+    height: 40%;
+}
